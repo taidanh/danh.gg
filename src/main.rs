@@ -7,18 +7,18 @@ use yew_router::prelude::*;
 
 #[derive(Clone, Routable, PartialEq)]
 enum RootRoute {
-    #[at("/yew-template-for-github-io/")]
+    #[at("/danh.gg/")]
     Home,
-    #[at("/yew-template-for-github-io/:s")]
+    #[at("/danh.gg/:s")]
     Route,
 }
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
-    #[at("/yew-template-for-github-io/about")]
+    #[at("/danh.gg/about")]
     About,
     #[not_found]
-    #[at("/yew-template-for-github-io/404")]
+    #[at("/danh.gg/404")]
     NotFound,
 }
 
@@ -68,7 +68,7 @@ fn app() -> Html {
     html! {
         // ********************************************************
         // **    basename is not supported on yew 0.19.0 yet.    **
-        // <BrowserRouter basename="/yew-template-for-github-io/">
+        // <BrowserRouter basename="/danh.gg/">
         //     <Switch<Route> render={Switch::render(switch)} />
         // </BrowserRouter>
         // ********************************************************
